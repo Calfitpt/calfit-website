@@ -23,15 +23,15 @@
                         calfit: {
                             50: '#f0f7fb',  
                             100: '#e1eff7',
-                            500: '#3c979b', // Teal from new logo
+                            500: '#469c9e', // Teal from new logo
                             600: '#2f7a7d', 
                             700: '#235c5e',
-                            900: '#13385e', // Navy Blue from new logo
+                            900: '#143154', // Navy Blue from new logo
                         },
                         accent: {
-                            orange: '#f2982d', // Orange from circle
-                            green: '#79be58',  // Green from circle
-                            blue: '#3595c4'    // Light blue from circle
+                            orange: '#f29c38', // Orange from new logo circle
+                            green: '#74b959',  // Green from new logo circle
+                            blue: '#2c92c4'    // Light blue from new logo circle
                         }
                     }
                 }
@@ -41,7 +41,7 @@
     
     <style>
         .hero-pattern {
-            background-image: linear-gradient(to right, rgba(19, 56, 94, 0.88), rgba(60, 151, 155, 0.80)), url('https://images.unsplash.com/photo-1574406280735-351fc1a7c5e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-image: linear-gradient(to right, rgba(20, 49, 84, 0.92), rgba(70, 156, 158, 0.85)), url('https://images.unsplash.com/photo-1574406280735-351fc1a7c5e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
         }
@@ -83,13 +83,17 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-28">
                 <div class="flex items-center">
-                    <a href="#home" class="flex items-center gap-3 group py-2">
+                    <a href="#home" class="flex items-center gap-3 md:gap-4 group py-2">
                         <!-- Make sure to upload your logo as 'logo.jpg' (all lowercase) to your GitHub! -->
-                        <img src="logo.jpg" alt="CalFit Physical Therapy" class="h-20 md:h-24 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x150/ffffff/13385e?text=CalFit+Physical+Therapy';">
+                        <img src="logo.jpg" alt="CalFit Physical Therapy" class="h-20 md:h-24 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x150/ffffff/143154?text=CalFit+PT';">
+                        <!-- Added Text next to logo -->
+                        <div class="hidden sm:flex flex-col justify-center">
+                            <span class="text-2xl md:text-3xl font-black text-calfit-900 leading-tight tracking-tight">CalFit</span>
+                            <span class="text-xs md:text-sm font-bold text-calfit-500 tracking-widest uppercase mt-0.5">Physical Therapy</span>
+                        </div>
                     </a>
                 </div>
                 
-                <!-- Desktop Menu with Dropdowns -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#home" class="text-gray-600 hover:text-calfit-500 font-medium transition-colors">Home</a>
                     
@@ -409,15 +413,15 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-gray-100 rounded-2xl h-64 overflow-hidden shadow-sm group relative border border-gray-200">
                         <div class="absolute inset-0 bg-calfit-900/10 group-hover:bg-transparent transition-colors z-10"></div>
-                        <img src="https://placehold.co/600x400/e1eff7/3c979b?text=Clinic+Waiting+Area\n(Add+Photo+Later)" alt="Clinic Front Desk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://placehold.co/600x400/e1eff7/469c9e?text=Clinic+Waiting+Area\n(Add+Photo+Later)" alt="Clinic Front Desk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="bg-gray-100 rounded-2xl h-64 overflow-hidden shadow-sm group relative border border-gray-200">
                         <div class="absolute inset-0 bg-calfit-900/10 group-hover:bg-transparent transition-colors z-10"></div>
-                        <img src="https://placehold.co/600x400/e1eff7/3c979b?text=Private+Treatment+Room\n(Add+Photo+Later)" alt="Treatment Area" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://placehold.co/600x400/e1eff7/469c9e?text=Private+Treatment+Room\n(Add+Photo+Later)" alt="Treatment Area" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="bg-gray-100 rounded-2xl h-64 overflow-hidden shadow-sm group relative sm:col-span-2 lg:col-span-1 border border-gray-200">
                         <div class="absolute inset-0 bg-calfit-900/10 group-hover:bg-transparent transition-colors z-10"></div>
-                        <img src="https://placehold.co/600x400/e1eff7/3c979b?text=Open+Gym+Space\n(Add+Photo+Later)" alt="Gym and Equipment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://placehold.co/600x400/e1eff7/469c9e?text=Open+Gym+Space\n(Add+Photo+Later)" alt="Gym and Equipment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                 </div>
             </div>
@@ -451,12 +455,12 @@
                     <div class="bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 flex flex-col group">
                         <div class="h-80 bg-gray-200 relative overflow-hidden">
                             <!-- Placeholder for Neha's photo -->
-                            <img src="https://placehold.co/800x600/e1eff7/3c979b?text=Neha+Joshi\nPT" alt="Neha Joshi, PT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <img src="https://placehold.co/800x600/e1eff7/469c9e?text=Neha+Joshi\nPT" alt="Neha Joshi, PT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
                         <div class="p-8 flex flex-col flex-grow">
                             <p class="text-sm font-bold text-calfit-500 uppercase tracking-widest mb-1">Physical Therapist & Co-Director</p>
                             <h3 class="text-2xl font-black text-gray-900 mb-3">Neha Joshi, PT</h3>
-                            <p class="text-gray-600 mb-6 flex-grow text-base leading-relaxed">Neha completed her Bachelor of Physiotherapy, followed by a Master of Physiotherapy in Musculoskeletal Sciences in 2014 from India. She has been practicing physical therapy in various outpatient settings in San Jose, CA, since 2021 and specializes in complex orthopedic injuries and post partum corrective exercises. She believes in an active approach to rehab, empowering her patients with the tools they need for recovery and return to activities they love.<br><br>Outside of work, she loves to dance and perform, and has been learning Kathak (an Indian classical dance form). She also loves traveling and spending time with her family and friends.</p>
+                            <p class="text-gray-600 mb-6 text-base leading-relaxed">Neha completed her Bachelor of Physiotherapy, followed by a Master of Physiotherapy in Musculoskeletal Sciences in 2014 from India. She has been practicing physical therapy in various outpatient settings in San Jose, CA, since 2021 and specializes in complex orthopedic injuries and post partum corrective exercises. She believes in an active approach to rehab, empowering her patients with the tools they need for recovery and return to activities they love.<br><br>Outside of work, she loves to dance and perform, and has been learning Kathak (an Indian classical dance form). She also loves traveling and spending time with her family and friends.</p>
                         </div>
                     </div>
 
@@ -464,12 +468,12 @@
                     <div class="bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 flex flex-col group">
                         <div class="h-80 bg-gray-200 relative overflow-hidden">
                             <!-- Placeholder for Poorva's photo -->
-                            <img src="https://placehold.co/800x600/e1eff7/3c979b?text=Poorva\nPT" alt="Poorva, PT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <img src="https://placehold.co/800x600/e1eff7/469c9e?text=Poorva\nPT" alt="Poorva, PT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
                         <div class="p-8 flex flex-col flex-grow">
                             <p class="text-sm font-bold text-calfit-500 uppercase tracking-widest mb-1">Physical Therapist & Co-Director</p>
                             <h3 class="text-2xl font-black text-gray-900 mb-3">Poorva, PT</h3>
-                            <p class="text-gray-600 mb-6 flex-grow text-base leading-relaxed">Bringing 12 years of extensive clinical experience to CalFit, Poorva specializes in delivering highly personalized, evidence-based physical therapy. She is dedicated to helping patients overcome acute and chronic pain, restore function, and achieve their long-term health and mobility goals.</p>
+                            <p class="text-gray-600 mb-6 text-base leading-relaxed">Bringing 12 years of extensive clinical experience to CalFit, Poorva specializes in delivering highly personalized, evidence-based physical therapy. She is dedicated to helping patients overcome acute and chronic pain, restore function, and achieve their long-term health and mobility goals.</p>
                         </div>
                     </div>
 
@@ -485,9 +489,13 @@
                 
                 <!-- Brand Info -->
                 <div>
-                    <div class="flex items-center gap-3 mb-6 bg-white p-3 rounded-xl inline-block">
-                        <!-- Logo inside footer -->
-                        <img src="logo.jpg" alt="CalFit Physical Therapy" class="h-10 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/200x80/ffffff/13385e?text=CalFit';">
+                    <div class="flex items-center gap-4 mb-6 bg-white p-4 rounded-2xl inline-flex shadow-sm">
+                        <!-- Logo inside footer increased in size with text -->
+                        <img src="logo.jpg" alt="CalFit Physical Therapy" class="h-16 md:h-20 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/200x80/ffffff/143154?text=CalFit';">
+                        <div class="flex flex-col justify-center pr-2">
+                            <span class="text-xl md:text-2xl font-black text-calfit-900 leading-tight tracking-tight">CalFit</span>
+                            <span class="text-xs font-bold text-calfit-500 tracking-widest uppercase mt-0.5">Physical Therapy</span>
+                        </div>
                     </div>
                     <p class="text-calfit-100 mb-8 leading-relaxed">Premium, 1-on-1 physical therapy locally owned and operated in South San Jose.</p>
                     <div class="flex space-x-4">
@@ -565,7 +573,7 @@
         function handleHash() {
             // Get hash without the # symbol, default to 'home'
             const hash = window.location.hash.substring(1) || 'home';
-            // Added 'space' and 'book' to valid views array
+            // Valid views for the application
             const validViews = ['home', 'services', 'about', 'space', 'book'];
             const viewToLoad = validViews.includes(hash) ? hash : 'home';
             
@@ -605,7 +613,7 @@
             }
         });
 
-        // Mock Booking Function
+        // Mock Booking Function (Remains for demo purposes if needed later)
         function bookAppointment() {
             const modalHtml = `
                 <div id="booking-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-calfit-900/80 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300" style="animation: fadeIn 0.3s forwards;">
