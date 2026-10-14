@@ -81,11 +81,11 @@
 
     <nav class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-24">
+            <div class="flex justify-between h-28">
                 <div class="flex items-center">
                     <a href="#home" class="flex items-center gap-3 group py-2">
                         <!-- Make sure to upload your logo as 'logo.jpg' (all lowercase) to your GitHub! -->
-                        <img src="logo.jpg" alt="CalFit Physical Therapy" class="h-16 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x150/ffffff/13385e?text=CalFit+Physical+Therapy';">
+                        <img src="logo.jpg" alt="CalFit Physical Therapy" class="h-20 md:h-24 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x150/ffffff/13385e?text=CalFit+Physical+Therapy';">
                     </a>
                 </div>
                 
@@ -134,7 +134,7 @@
                         </div>
                     </div>
                     
-                    <a href="#home" onclick="setTimeout(() => { document.getElementById('book').scrollIntoView(); }, 100);" class="bg-accent-orange hover:bg-orange-500 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                    <a href="#book" class="bg-accent-orange hover:bg-orange-500 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                         Request Appointment
                     </a>
                 </div>
@@ -156,7 +156,7 @@
                 <a href="#services" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Treatments</a>
                 <a href="#space" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Our Space</a>
                 <a href="#about" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">About Our Team</a>
-                <a href="#home" onclick="setTimeout(() => { document.getElementById('book').scrollIntoView(); }, 100);" class="mobile-link block w-full text-center mt-4 bg-accent-orange text-white px-5 py-3 rounded-xl font-bold shadow-md">Request Appointment</a>
+                <a href="#book" class="mobile-link block w-full text-center mt-4 bg-accent-orange text-white px-5 py-3 rounded-xl font-bold shadow-md">Request Appointment</a>
             </div>
         </div>
     </nav>
@@ -182,7 +182,7 @@
                         </p>
                         
                         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <a href="#home" onclick="setTimeout(() => { document.getElementById('book').scrollIntoView(); }, 100);" class="bg-accent-orange hover:bg-orange-500 text-white px-8 py-4 rounded-full font-extrabold text-lg transition-all shadow-[0_0_20px_rgba(239,141,34,0.4)] hover:shadow-[0_0_30px_rgba(239,141,34,0.6)] transform hover:-translate-y-1 text-center flex items-center justify-center gap-2">
+                            <a href="#book" class="bg-accent-orange hover:bg-orange-500 text-white px-8 py-4 rounded-full font-extrabold text-lg transition-all shadow-[0_0_20px_rgba(239,141,34,0.4)] hover:shadow-[0_0_30px_rgba(239,141,34,0.6)] transform hover:-translate-y-1 text-center flex items-center justify-center gap-2">
                                 <i class="fa-regular fa-calendar-check text-xl"></i> Request Appointment
                             </a>
                             <a href="#services" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-full font-bold text-lg transition-all text-center">
@@ -271,35 +271,46 @@
                     </p>
                 </div>
             </section>
+        </div>
 
-            <section id="book" class="py-20 bg-calfit-900 relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-                    <div class="absolute -top-40 -right-40 w-96 h-96 bg-calfit-700 rounded-full opacity-30 blur-3xl"></div>
-                    <div class="absolute bottom-0 left-10 w-80 h-80 bg-accent-orange rounded-full opacity-10 blur-3xl blob-shape"></div>
+        <!-- ============================================== -->
+        <!-- VIEW: BOOK APPOINTMENT                         -->
+        <!-- ============================================== -->
+        <div id="view-book" class="page-view hidden bg-calfit-900 min-h-screen pt-10 pb-24 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+                <div class="absolute -top-40 -right-40 w-96 h-96 bg-calfit-700 rounded-full opacity-30 blur-3xl"></div>
+                <div class="absolute bottom-0 left-10 w-80 h-80 bg-accent-orange rounded-full opacity-10 blur-3xl blob-shape"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                
+                <!-- Breadcrumbs/Back -->
+                <div class="mb-12 text-left">
+                    <a href="#home" class="text-calfit-100 hover:text-white font-medium flex items-center gap-2 transition-colors">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Home
+                    </a>
                 </div>
 
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                    <h2 class="text-4xl font-black text-white sm:text-5xl mb-6">
-                        Ready to move pain-free?
-                    </h2>
-                    <p class="text-xl text-calfit-100 mb-10 max-w-2xl mx-auto">
-                        Schedule your comprehensive 1-on-1 evaluation today through our secure patient portal.
-                    </p>
-                    <div class="bg-white/10 p-8 sm:p-10 rounded-3xl backdrop-blur-md border border-white/20 inline-block shadow-2xl">
-                        <div class="inline-flex items-center bg-accent-orange/20 border border-accent-orange/30 px-4 py-1.5 rounded-full mb-6">
-                            <i class="fa-solid fa-bolt text-accent-orange mr-2"></i>
-                            <p class="text-white font-semibold text-sm">No Referral Needed. Start Today!</p>
-                        </div>
-                        <div class="block">
-                            <!-- This button links to SPRY EMR Portal -->
-                            <button onclick="bookAppointment()" class="bg-accent-orange text-white hover:bg-orange-500 px-10 py-5 rounded-2xl font-black text-xl transition-all shadow-[0_0_20px_rgba(242,152,45,0.3)] hover:shadow-[0_0_30px_rgba(242,152,45,0.6)] transform hover:-translate-y-1 w-full sm:w-auto flex items-center justify-center mx-auto gap-3">
-                                Request Appointment <i class="fa-solid fa-arrow-up-right-from-square text-lg opacity-80"></i>
-                            </button>
-                        </div>
-                        <p class="text-calfit-100/70 text-sm mt-6">Secure scheduling powered by SPRY EMR.</p>
+                <h2 class="text-4xl font-black text-white sm:text-5xl mb-6">
+                    Ready to move pain-free?
+                </h2>
+                <p class="text-xl text-calfit-100 mb-10 max-w-2xl mx-auto">
+                    Schedule your comprehensive 1-on-1 evaluation today through our secure patient portal.
+                </p>
+                <div class="bg-white/10 p-8 sm:p-10 rounded-3xl backdrop-blur-md border border-white/20 inline-block shadow-2xl">
+                    <div class="inline-flex items-center bg-accent-orange/20 border border-accent-orange/30 px-4 py-1.5 rounded-full mb-6">
+                        <i class="fa-solid fa-bolt text-accent-orange mr-2"></i>
+                        <p class="text-white font-semibold text-sm">No Referral Needed. Start Today!</p>
                     </div>
+                    <div class="block">
+                        <!-- This button links to SPRY EMR Portal -->
+                        <button onclick="bookAppointment()" class="bg-accent-orange text-white hover:bg-orange-500 px-10 py-5 rounded-2xl font-black text-xl transition-all shadow-[0_0_20px_rgba(242,152,45,0.3)] hover:shadow-[0_0_30px_rgba(242,152,45,0.6)] transform hover:-translate-y-1 w-full sm:w-auto flex items-center justify-center mx-auto gap-3">
+                            Request Appointment <i class="fa-solid fa-arrow-up-right-from-square text-lg opacity-80"></i>
+                        </button>
+                    </div>
+                    <p class="text-calfit-100/70 text-sm mt-6">Secure scheduling powered by SPRY EMR.</p>
                 </div>
-            </section>
+            </div>
         </div>
 
         <!-- ============================================== -->
@@ -554,8 +565,8 @@
         function handleHash() {
             // Get hash without the # symbol, default to 'home'
             const hash = window.location.hash.substring(1) || 'home';
-            // Added 'space' to valid views array
-            const validViews = ['home', 'services', 'about', 'space'];
+            // Added 'space' and 'book' to valid views array
+            const validViews = ['home', 'services', 'about', 'space', 'book'];
             const viewToLoad = validViews.includes(hash) ? hash : 'home';
             
             // Hide all views
