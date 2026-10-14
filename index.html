@@ -21,16 +21,17 @@
                     },
                     colors: {
                         calfit: {
-                            50: '#f0f9fa',  // Lightest Teal
-                            100: '#e0f2f3',
-                            500: '#489c9e', // "Fit" Teal (Main Brand)
-                            600: '#3a7d7e', // Hover state
-                            700: '#2d6061',
-                            900: '#0f3b68', // "Cal" Navy Blue (Dark accents/Text)
+                            50: '#f0f7fb',  
+                            100: '#e1eff7',
+                            500: '#3c979b', // Teal from new logo
+                            600: '#2f7a7d', 
+                            700: '#235c5e',
+                            900: '#13385e', // Navy Blue from new logo
                         },
                         accent: {
-                            orange: '#ef8d22', // Circle Orange
-                            green: '#7ab959',  // Circle Green
+                            orange: '#f2982d', // Orange from circle
+                            green: '#79be58',  // Green from circle
+                            blue: '#3595c4'    // Light blue from circle
                         }
                     }
                 }
@@ -40,7 +41,7 @@
     
     <style>
         .hero-pattern {
-            background-image: linear-gradient(to right, rgba(15, 59, 104, 0.88), rgba(72, 156, 158, 0.80)), url('https://images.unsplash.com/photo-1574406280735-351fc1a7c5e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-image: linear-gradient(to right, rgba(19, 56, 94, 0.88), rgba(60, 151, 155, 0.80)), url('https://images.unsplash.com/photo-1574406280735-351fc1a7c5e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
         }
@@ -83,8 +84,8 @@
             <div class="flex justify-between h-24">
                 <div class="flex items-center">
                     <a href="#home" class="flex items-center gap-3 group py-2">
-                        <!-- Make sure to upload your logo as 'logo.jpg' to your GitHub! -->
-                        <img src="logo.jpg" alt="CalFit Physical Therapy" class="h-16 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x150/ffffff/0f3b68?text=CalFit+Physical+Therapy';">
+                        <!-- Make sure to upload your logo as 'logo.jpg' (all lowercase) to your GitHub! -->
+                        <img src="logo.jpg" alt="CalFit Physical Therapy" class="h-16 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x150/ffffff/13385e?text=CalFit+Physical+Therapy';">
                     </a>
                 </div>
                 
@@ -105,6 +106,18 @@
                                 <a href="#services" class="block px-4 py-2 text-sm text-gray-500 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl transition-colors">Vestibular Therapy</a>
                                 <a href="#services" class="block px-4 py-2 text-sm text-gray-500 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl transition-colors">Post-Surgical Rehab</a>
                                 <a href="#services" class="block px-4 py-2 text-sm text-gray-500 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl transition-colors">Sports Performance</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Our Space Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-600 hover:text-calfit-500 font-medium transition-colors flex items-center gap-1 py-10">
+                            Our Space <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top -translate-y-2 group-hover:translate-y-0 -mt-4">
+                            <div class="p-3 space-y-1">
+                                <a href="#space" class="block px-4 py-2 text-sm text-gray-700 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl font-medium transition-colors">Take a Tour</a>
                             </div>
                         </div>
                     </div>
@@ -141,6 +154,7 @@
                 </div>
                 <a href="#home" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Home</a>
                 <a href="#services" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Treatments</a>
+                <a href="#space" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Our Space</a>
                 <a href="#about" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">About Our Team</a>
                 <a href="#home" onclick="setTimeout(() => { document.getElementById('book').scrollIntoView(); }, 100);" class="mobile-link block w-full text-center mt-4 bg-accent-orange text-white px-5 py-3 rounded-xl font-bold shadow-md">Request Appointment</a>
             </div>
@@ -243,36 +257,12 @@
                 </div>
             </section>
 
-            <section class="py-20 bg-white border-t border-gray-100">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-12">
-                        <h2 class="text-sm text-calfit-500 font-bold tracking-widest uppercase mb-2">Our Space</h2>
-                        <h2 class="text-3xl font-black text-calfit-900 tracking-tight sm:text-4xl">State-of-the-Art Recovery</h2>
-                        <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">Take a look inside our brand new, fully-equipped clinic designed specifically for your rehabilitation and comfort.</p>
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div class="bg-gray-100 rounded-2xl h-64 overflow-hidden shadow-sm group relative border border-gray-200">
-                            <div class="absolute inset-0 bg-calfit-900/10 group-hover:bg-transparent transition-colors z-10"></div>
-                            <img src="https://placehold.co/600x400/e0f2f3/489c9e?text=Clinic+Waiting+Area\n(Add+Photo+Later)" alt="Clinic Front Desk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        </div>
-                        <div class="bg-gray-100 rounded-2xl h-64 overflow-hidden shadow-sm group relative border border-gray-200">
-                            <div class="absolute inset-0 bg-calfit-900/10 group-hover:bg-transparent transition-colors z-10"></div>
-                            <img src="https://placehold.co/600x400/e0f2f3/489c9e?text=Private+Treatment+Room\n(Add+Photo+Later)" alt="Treatment Area" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        </div>
-                        <div class="bg-gray-100 rounded-2xl h-64 overflow-hidden shadow-sm group relative sm:col-span-2 lg:col-span-1 border border-gray-200">
-                            <div class="absolute inset-0 bg-calfit-900/10 group-hover:bg-transparent transition-colors z-10"></div>
-                            <img src="https://placehold.co/600x400/e0f2f3/489c9e?text=Open+Gym+Space\n(Add+Photo+Later)" alt="Gym and Equipment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="py-16 bg-calfit-50 border-t border-gray-100">
+            <section class="py-16 bg-white border-t border-gray-100">
                 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <div class="inline-block mb-4">
                         <span class="bg-accent-orange text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide shadow-sm"><i class="fa-solid fa-clock mr-1"></i> Coming Soon</span>
                     </div>
-                    <div class="w-16 h-16 bg-white shadow-sm rounded-2xl flex items-center justify-center text-calfit-500 text-3xl mx-auto mb-6 transform hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 bg-calfit-50 shadow-sm rounded-2xl flex items-center justify-center text-calfit-500 text-3xl mx-auto mb-6 transform hover:scale-110 transition-transform">
                         <i class="fa-solid fa-shield-heart"></i>
                     </div>
                     <h2 class="text-3xl font-black text-calfit-900 tracking-tight sm:text-4xl mb-4">Insurances Accepted</h2>
@@ -302,7 +292,7 @@
                         </div>
                         <div class="block">
                             <!-- This button links to SPRY EMR Portal -->
-                            <button onclick="bookAppointment()" class="bg-accent-orange text-white hover:bg-orange-500 px-10 py-5 rounded-2xl font-black text-xl transition-all shadow-[0_0_20px_rgba(239,141,34,0.3)] hover:shadow-[0_0_30px_rgba(239,141,34,0.6)] transform hover:-translate-y-1 w-full sm:w-auto flex items-center justify-center mx-auto gap-3">
+                            <button onclick="bookAppointment()" class="bg-accent-orange text-white hover:bg-orange-500 px-10 py-5 rounded-2xl font-black text-xl transition-all shadow-[0_0_20px_rgba(242,152,45,0.3)] hover:shadow-[0_0_30px_rgba(242,152,45,0.6)] transform hover:-translate-y-1 w-full sm:w-auto flex items-center justify-center mx-auto gap-3">
                                 Request Appointment <i class="fa-solid fa-arrow-up-right-from-square text-lg opacity-80"></i>
                             </button>
                         </div>
@@ -388,9 +378,44 @@
         </div>
 
         <!-- ============================================== -->
+        <!-- VIEW: OUR SPACE                                -->
+        <!-- ============================================== -->
+        <div id="view-space" class="page-view hidden bg-white min-h-screen pt-10 pb-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Breadcrumbs/Back -->
+                <div class="mb-8">
+                    <a href="#home" class="text-calfit-500 hover:text-calfit-700 font-medium flex items-center gap-2 transition-colors">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Home
+                    </a>
+                </div>
+
+                <div class="text-center mb-12">
+                    <h1 class="text-sm text-accent-orange font-bold tracking-widest uppercase mb-2">Our Clinic</h1>
+                    <h2 class="text-4xl font-black text-calfit-900 tracking-tight sm:text-5xl">State-of-the-Art Recovery</h2>
+                    <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">Take a look inside our brand new, fully-equipped clinic designed specifically for your rehabilitation and comfort.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-100 rounded-2xl h-64 overflow-hidden shadow-sm group relative border border-gray-200">
+                        <div class="absolute inset-0 bg-calfit-900/10 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://placehold.co/600x400/e1eff7/3c979b?text=Clinic+Waiting+Area\n(Add+Photo+Later)" alt="Clinic Front Desk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="bg-gray-100 rounded-2xl h-64 overflow-hidden shadow-sm group relative border border-gray-200">
+                        <div class="absolute inset-0 bg-calfit-900/10 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://placehold.co/600x400/e1eff7/3c979b?text=Private+Treatment+Room\n(Add+Photo+Later)" alt="Treatment Area" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="bg-gray-100 rounded-2xl h-64 overflow-hidden shadow-sm group relative sm:col-span-2 lg:col-span-1 border border-gray-200">
+                        <div class="absolute inset-0 bg-calfit-900/10 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://placehold.co/600x400/e1eff7/3c979b?text=Open+Gym+Space\n(Add+Photo+Later)" alt="Gym and Equipment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================== -->
         <!-- VIEW: ABOUT OUR TEAM                           -->
         <!-- ============================================== -->
-        <div id="view-about" class="page-view hidden bg-white min-h-screen pt-10 pb-24">
+        <div id="view-about" class="page-view hidden bg-slate-50 min-h-screen pt-10 pb-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 <!-- Breadcrumbs/Back -->
@@ -412,23 +437,23 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
                     
                     <!-- Neha Card -->
-                    <div class="bg-slate-50 rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-200 flex flex-col group">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 flex flex-col group">
                         <div class="h-80 bg-gray-200 relative overflow-hidden">
                             <!-- Placeholder for Neha's photo -->
-                            <img src="https://placehold.co/800x600/e0f2f3/489c9e?text=Neha+Joshi\nPT" alt="Neha Joshi, PT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <img src="https://placehold.co/800x600/e1eff7/3c979b?text=Neha+Joshi\nPT" alt="Neha Joshi, PT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
                         <div class="p-8 flex flex-col flex-grow">
                             <p class="text-sm font-bold text-calfit-500 uppercase tracking-widest mb-1">Physical Therapist & Co-Director</p>
                             <h3 class="text-2xl font-black text-gray-900 mb-3">Neha Joshi, PT</h3>
-                            <p class="text-gray-600 mb-6 flex-grow text-base leading-relaxed">With over 6 years of clinical experience, Neha specializes in complex orthopedic, vestibular, and sports injuries. She believes in an active approach to rehab, empowering her patients with the tools they need to heal themselves, build resilience, and stay out of the doctor's office for good.</p>
+                            <p class="text-gray-600 mb-6 flex-grow text-base leading-relaxed">Neha completed her Bachelor of Physiotherapy, followed by a Master of Physiotherapy in Musculoskeletal Sciences in 2014 from India. She has been practicing physical therapy in various outpatient settings in San Jose, CA, since 2021 and specializes in complex orthopedic injuries and post partum corrective exercises. She believes in an active approach to rehab, empowering her patients with the tools they need for recovery and return to activities they love.<br><br>Outside of work, she loves to dance and perform, and has been learning Kathak (an Indian classical dance form). She also loves traveling and spending time with her family and friends.</p>
                         </div>
                     </div>
 
                     <!-- Poorva Card -->
-                    <div class="bg-slate-50 rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-200 flex flex-col group">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 flex flex-col group">
                         <div class="h-80 bg-gray-200 relative overflow-hidden">
                             <!-- Placeholder for Poorva's photo -->
-                            <img src="https://placehold.co/800x600/e0f2f3/489c9e?text=Poorva\nPT" alt="Poorva, PT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <img src="https://placehold.co/800x600/e1eff7/3c979b?text=Poorva\nPT" alt="Poorva, PT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
                         <div class="p-8 flex flex-col flex-grow">
                             <p class="text-sm font-bold text-calfit-500 uppercase tracking-widest mb-1">Physical Therapist & Co-Director</p>
@@ -451,7 +476,7 @@
                 <div>
                     <div class="flex items-center gap-3 mb-6 bg-white p-3 rounded-xl inline-block">
                         <!-- Logo inside footer -->
-                        <img src="logo.jpg" alt="CalFit Physical Therapy" class="h-10 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/200x80/ffffff/0f3b68?text=CalFit';">
+                        <img src="logo.jpg" alt="CalFit Physical Therapy" class="h-10 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/200x80/ffffff/13385e?text=CalFit';">
                     </div>
                     <p class="text-calfit-100 mb-8 leading-relaxed">Premium, 1-on-1 physical therapy locally owned and operated in South San Jose.</p>
                     <div class="flex space-x-4">
@@ -529,7 +554,8 @@
         function handleHash() {
             // Get hash without the # symbol, default to 'home'
             const hash = window.location.hash.substring(1) || 'home';
-            const validViews = ['home', 'services', 'about'];
+            // Added 'space' to valid views array
+            const validViews = ['home', 'services', 'about', 'space'];
             const viewToLoad = validViews.includes(hash) ? hash : 'home';
             
             // Hide all views
@@ -555,7 +581,6 @@
         
         // Run on initial page load
         window.addEventListener('DOMContentLoaded', handleHash);
-
 
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
