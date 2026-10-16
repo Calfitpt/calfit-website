@@ -81,11 +81,12 @@
 
     <nav class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-32">
+            <div class="flex justify-between h-36">
                 <div class="flex items-center">
                     <a href="#home" class="flex items-center gap-4 group py-2">
-                        <!-- Updated Logo Image - Larger Size -->
-                        <img src="logo.jpg" alt="CalFit Physical Therapy Logo" class="h-28 md:h-36 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x150/ffffff/153153?text=CalFit+PT';">
+                        <!-- Logo Image -->
+                        <img src="logo.jpg" alt="CalFit Physical Therapy Logo" class="h-32 md:h-40 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x150/ffffff/153153?text=CalFit+PT';">
+                        
                         <!-- Text next to logo -->
                         <div class="hidden sm:flex flex-col justify-center border-l-2 border-gray-100 pl-4">
                             <span class="text-2xl md:text-3xl font-black text-calfit-900 leading-none tracking-tight mb-1">CalFit</span>
@@ -133,6 +134,18 @@
                         </div>
                     </div>
                     
+                    <!-- Insurance Dropdown -->
+                    <div class="relative group">
+                        <button onclick="window.location.hash='#insurance'" class="text-gray-600 hover:text-calfit-500 font-medium transition-colors flex items-center gap-1 py-10">
+                            Insurance <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top -translate-y-2 group-hover:translate-y-0 -mt-4">
+                            <div class="p-3 space-y-1">
+                                <a href="#insurance" class="block px-4 py-2 text-sm text-gray-700 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl font-medium transition-colors">Payment Options</a>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <a href="#book" class="bg-accent-orange hover:bg-orange-500 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                         Request Appointment
                     </a>
@@ -155,6 +168,7 @@
                 <a href="#services" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Treatments</a>
                 <a href="#space" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Our Clinic</a>
                 <a href="#about" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Meet the Team</a>
+                <a href="#insurance" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Insurance & Payment</a>
                 <a href="#book" class="mobile-link block w-full text-center mt-4 bg-accent-orange text-white px-5 py-3 rounded-xl font-bold shadow-md">Request Appointment</a>
             </div>
         </div>
@@ -173,8 +187,8 @@
                             <i class="fa-solid fa-bolt text-accent-orange mr-2"></i> Now Accepting New Patients
                         </div>
                         
-                        <!-- Reduced Font Size Here -->
-                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-lg max-w-2xl mx-auto lg:mx-0">
+                        <!-- Reduced Font Size Further so it fits on 2 lines -->
+                        <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-lg mx-auto lg:mx-0">
                             Move Better. Feel Stronger.<br class="hidden sm:block">
                             <span class="text-calfit-100">Get Back to What You Love.</span>
                         </h1>
@@ -516,7 +530,7 @@
                         </div>
                         <div class="p-8 flex flex-col flex-grow">
                             <p class="text-sm font-bold text-calfit-500 uppercase tracking-widest mb-1">Physical Therapist & Co-Director</p>
-                            <h3 class="text-xl font-black text-gray-900 mb-3">Neha Joshi, PT</h3>
+                            <h3 class="text-2xl font-black text-gray-900 mb-3">Neha Joshi, PT</h3>
                             <div class="text-gray-600 text-sm leading-relaxed space-y-4">
                                 <p>Neha completed her Bachelor of Physiotherapy, followed by a Master of Physiotherapy in Musculoskeletal Sciences in 2014 from India. She has been practicing physical therapy in various outpatient settings in San Jose, CA, since 2021 and specializes in complex orthopedic injuries and post partum corrective exercises. She believes in an active approach to rehab, empowering her patients with the tools they need for recovery and return to activities they love.</p>
                                 <p>Outside of work, she loves to dance and perform, and has been learning Kathak (an Indian classical dance form). She also loves traveling and spending time her family and friends.</p>
@@ -531,52 +545,61 @@
                         </div>
                         <div class="p-8 flex flex-col flex-grow">
                             <p class="text-sm font-bold text-calfit-500 uppercase tracking-widest mb-1">Physical Therapist & Co-Director</p>
-                            <h3 class="text-xl font-black text-gray-900 mb-3">Poorva, PT</h3>
+                            <h3 class="text-2xl font-black text-gray-900 mb-3">Poorva, PT</h3>
                             <div class="text-gray-600 text-sm leading-relaxed space-y-4">
                                 <p>Bringing 12 years of extensive clinical experience to CalFit, Poorva specializes in delivering highly personalized, evidence-based physical therapy. She is dedicated to helping patients overcome acute and chronic pain, restore function, and achieve their long-term health and mobility goals.</p>
                             </div>
                         </div>
                     </div>
-
+                </div>
+            </div>
+        </div>
+        
+        <!-- ============================================== -->
+        <!-- ============================================== -->
+        <div id="view-insurance" class="page-view hidden bg-calfit-50 min-h-screen pt-10 pb-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Breadcrumbs/Back -->
+                <div class="mb-8">
+                    <a href="#home" class="text-calfit-500 hover:text-calfit-700 font-medium flex items-center gap-2 transition-colors">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Home
+                    </a>
                 </div>
 
-                <!-- Payment & Insurance Section -->
-                <div class="mt-24 border-t border-gray-200 pt-16">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl font-black text-calfit-900 tracking-tight sm:text-4xl">Payment & Insurance</h2>
-                        <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">We're currently completing insurance credentialing. While that process is underway, CalFit Physical Therapy offers self-pay appointments so you can begin working toward your movement and recovery goals.</p>
+                <div class="text-center mb-16">
+                    <h1 class="text-sm text-accent-orange font-bold tracking-widest uppercase mb-2">Options & Pricing</h1>
+                    <h2 class="text-3xl font-black text-calfit-900 tracking-tight sm:text-4xl">Payment & Insurance</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">We're currently completing insurance credentialing. While that process is underway, CalFit Physical Therapy offers self-pay appointments so you can begin working toward your movement and recovery goals.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Self Pay (Navy Theme) -->
+                    <div class="bg-white p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 border-t-4 border-calfit-900 flex flex-col h-full transform hover:-translate-y-1">
+                        <div class="w-16 h-16 bg-calfit-900 text-white rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-md">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-calfit-900 mb-3">Self-pay appointments</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">We believe you should understand the cost of care before your visit. Contact us for our current evaluation and follow-up visit rates.</p>
                     </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                        <!-- Self Pay -->
-                        <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 flex flex-col h-full">
-                            <div class="w-12 h-12 bg-calfit-50 text-calfit-500 rounded-full flex items-center justify-center mb-6 text-xl">
-                                <i class="fa-solid fa-wallet"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-calfit-900 mb-3">Self-pay appointments</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed">We believe you should understand the cost of care before your visit. Contact us for our current evaluation and follow-up visit rates.</p>
+                    <!-- Out of Network (Teal Theme) -->
+                    <div class="bg-white p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 border-t-4 border-calfit-500 flex flex-col h-full transform hover:-translate-y-1">
+                        <div class="w-16 h-16 bg-calfit-500 text-white rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-md">
+                            <i class="fa-solid fa-file-invoice"></i>
                         </div>
-                        
-                        <!-- Out of Network -->
-                        <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 flex flex-col h-full">
-                            <div class="w-12 h-12 bg-calfit-50 text-calfit-500 rounded-full flex items-center justify-center mb-6 text-xl">
-                                <i class="fa-solid fa-file-invoice"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-calfit-900 mb-3">Using out-of-network benefits</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed">If your health plan includes out-of-network physical therapy benefits, we can provide a superbill upon request. Reimbursement depends on your plan, and payment is not guaranteed.</p>
+                        <h3 class="text-xl font-bold text-calfit-900 mb-3">Using out-of-network benefits</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">If your health plan includes out-of-network physical therapy benefits, we can provide a superbill upon request. Reimbursement depends on your plan, and payment is not guaranteed.</p>
+                    </div>
+                    
+                    <!-- Questions (Orange Theme) -->
+                    <div class="bg-white p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 border-t-4 border-accent-orange flex flex-col h-full transform hover:-translate-y-1">
+                        <div class="w-16 h-16 bg-accent-orange text-white rounded-2xl flex items-center justify-center mb-6 text-2xl shadow-md">
+                            <i class="fa-solid fa-circle-question"></i>
                         </div>
-                        
-                        <!-- Questions -->
-                        <div class="bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 flex flex-col h-full">
-                            <div class="w-12 h-12 bg-calfit-50 text-calfit-500 rounded-full flex items-center justify-center mb-6 text-xl">
-                                <i class="fa-solid fa-circle-question"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-calfit-900 mb-3">Questions about coverage or cost?</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed">Contact us before booking, and we'll help you understand your available options.</p>
-                        </div>
+                        <h3 class="text-xl font-bold text-calfit-900 mb-3">Questions about coverage or cost?</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Contact us before booking, and we'll help you understand your available options.</p>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -596,7 +619,7 @@
                             <span class="text-xs font-bold text-calfit-500 tracking-widest uppercase leading-none">Physical Therapy</span>
                         </div>
                     </div>
-                    <p class="text-calfit-100 mb-8 leading-relaxed">Premium, 1-on-1 physical therapy locally owned and operated in South San Jose.</p>
+                    <p class="text-calfit-100 mb-8 leading-relaxed">Personalized, one-on-one physical therapy locally owned and operated in South San Jose.</p>
                 </div>
 
                 <!-- Contact Details -->
@@ -664,8 +687,8 @@
         function handleHash() {
             // Get hash without the # symbol, default to 'home'
             const hash = window.location.hash.substring(1) || 'home';
-            // Valid views for the application
-            const validViews = ['home', 'services', 'about', 'space', 'book'];
+            // Valid views for the application (Added insurance to the array)
+            const validViews = ['home', 'services', 'about', 'space', 'book', 'insurance'];
             const viewToLoad = validViews.includes(hash) ? hash : 'home';
             
             // Hide all views
