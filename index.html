@@ -76,18 +76,18 @@
 
     <div class="bg-calfit-900 text-white text-sm font-medium py-2 px-4 text-center z-50 relative hidden sm:block border-b border-calfit-700">
         <span class="bg-accent-orange text-white text-xs font-bold px-2 py-0.5 rounded-md mr-2 uppercase tracking-wide">Direct Access</span>
-        No Doctor's Referral Needed! Start your physical therapy treatment today.
+        You May Be Able to Start Without a Physician Referral! Start your physical therapy treatment today.
     </div>
 
     <nav class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-32">
                 <div class="flex items-center">
-                    <a href="#home" class="flex items-center gap-3 group py-2">
-                        <!-- Logo Image -->
-                        <img src="logo.jpg" alt="CalFit Physical Therapy Logo" class="h-24 md:h-28 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x150/ffffff/143154?text=CalFit+PT';">
+                    <a href="#home" class="flex items-center gap-4 group py-2">
+                        <!-- Updated Logo Image -->
+                        <img src="logo.jpg" alt="CalFit Physical Therapy Logo" class="h-28 md:h-32 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x150/ffffff/143154?text=CalFit+PT';">
                         <!-- Typography next to logo -->
-                        <div class="hidden sm:flex flex-col justify-center border-l-2 border-gray-100 pl-4 ml-2">
+                        <div class="hidden sm:flex flex-col justify-center border-l-2 border-gray-100 pl-4">
                             <span class="text-3xl md:text-4xl font-black text-calfit-900 leading-none tracking-tight mb-1">CalFit</span>
                             <span class="text-sm font-bold text-calfit-500 tracking-widest uppercase leading-none">Physical Therapy</span>
                         </div>
@@ -99,25 +99,25 @@
                     
                     <!-- Treatments Dropdown -->
                     <div class="relative group">
-                        <button class="text-gray-600 hover:text-calfit-500 font-medium transition-colors flex items-center gap-1 py-10">
+                        <button onclick="window.location.hash='#services'" class="text-gray-600 hover:text-calfit-500 font-medium transition-colors flex items-center gap-1 py-10">
                             Treatments <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
                         </button>
-                        <div class="absolute top-full left-0 w-56 bg-white shadow-xl rounded-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top -translate-y-2 group-hover:translate-y-0 -mt-4">
+                        <div class="absolute top-full left-0 w-64 bg-white shadow-xl rounded-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top -translate-y-2 group-hover:translate-y-0 -mt-4">
                             <div class="p-3 space-y-1">
                                 <a href="#services" class="block px-4 py-2 text-sm text-gray-700 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl font-medium transition-colors">View All Treatments</a>
                                 <div class="h-px bg-gray-100 my-1"></div>
-                                <a href="#services" class="block px-4 py-2 text-sm text-gray-500 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl transition-colors">Pain Management</a>
-                                <a href="#services" class="block px-4 py-2 text-sm text-gray-500 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl transition-colors">Vestibular Therapy</a>
-                                <a href="#services" class="block px-4 py-2 text-sm text-gray-500 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl transition-colors">Post-Surgical Rehab</a>
-                                <a href="#services" class="block px-4 py-2 text-sm text-gray-500 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl transition-colors">Sports Performance</a>
+                                <a href="#services" class="block px-4 py-2 text-sm text-gray-500 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl transition-colors">Pain & Orthopedic Care</a>
+                                <a href="#services" class="block px-4 py-2 text-sm text-gray-500 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl transition-colors">Vestibular & Balance Therapy</a>
+                                <a href="#services" class="block px-4 py-2 text-sm text-gray-500 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl transition-colors">Post-Surgical Rehabilitation</a>
+                                <a href="#services" class="block px-4 py-2 text-sm text-gray-500 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl transition-colors">Sports Rehabilitation</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Our Space Dropdown -->
+                    <!-- Our Clinic Dropdown -->
                     <div class="relative group">
-                        <button class="text-gray-600 hover:text-calfit-500 font-medium transition-colors flex items-center gap-1 py-10">
-                            Our Space <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                        <button onclick="window.location.hash='#space'" class="text-gray-600 hover:text-calfit-500 font-medium transition-colors flex items-center gap-1 py-10">
+                            Our Clinic <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
                         </button>
                         <div class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top -translate-y-2 group-hover:translate-y-0 -mt-4">
                             <div class="p-3 space-y-1">
@@ -126,14 +126,14 @@
                         </div>
                     </div>
 
-                    <!-- About Dropdown -->
+                    <!-- Meet the Team Dropdown -->
                     <div class="relative group">
-                        <button class="text-gray-600 hover:text-calfit-500 font-medium transition-colors flex items-center gap-1 py-10">
-                            About Us <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                        <button onclick="window.location.hash='#about'" class="text-gray-600 hover:text-calfit-500 font-medium transition-colors flex items-center gap-1 py-10">
+                            Meet the Team <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
                         </button>
                         <div class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top -translate-y-2 group-hover:translate-y-0 -mt-4">
                             <div class="p-3 space-y-1">
-                                <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl font-medium transition-colors">Meet the Team</a>
+                                <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-calfit-50 hover:text-calfit-500 rounded-xl font-medium transition-colors">Our Therapists</a>
                             </div>
                         </div>
                     </div>
@@ -154,12 +154,12 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-2xl">
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <div class="bg-calfit-50 text-calfit-900 text-xs font-bold py-2 px-3 rounded-md mb-2 flex items-center">
-                    <i class="fa-solid fa-circle-check text-accent-green mr-2"></i> No Referral Needed
+                    <i class="fa-solid fa-circle-check text-accent-green mr-2"></i> You May Be Able to Start Without a Physician Referral
                 </div>
                 <a href="#home" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Home</a>
                 <a href="#services" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Treatments</a>
-                <a href="#space" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Our Space</a>
-                <a href="#about" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">About Our Team</a>
+                <a href="#space" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Our Clinic</a>
+                <a href="#about" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-calfit-500 hover:bg-calfit-50">Meet the Team</a>
                 <a href="#book" class="mobile-link block w-full text-center mt-4 bg-accent-orange text-white px-5 py-3 rounded-xl font-bold shadow-md">Request Appointment</a>
             </div>
         </div>
@@ -178,10 +178,10 @@
                             <i class="fa-solid fa-bolt text-accent-orange mr-2"></i> Now Accepting New Patients
                         </div>
                         <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-lg">
-                            Reclaim Your <span class="text-calfit-100">Active Life.</span>
+                            Move Better. Feel Stronger.<br><span class="text-calfit-100">Get Back to What You Love.</span>
                         </h1>
                         <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium drop-shadow-md">
-                            Skip the crowded clinics. Get premium, 1-on-1 care directly from an expert Physical Therapist in South San Jose. We fix the root cause so you can get back to what you love, faster.
+                            Personalized, one-on-one physical therapy, built around your goals, your lifestyle, and your recovery.
                         </p>
                         
                         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -193,7 +193,7 @@
                             </a>
                         </div>
                         <p class="mt-4 text-sm text-calfit-100 font-medium flex items-center justify-center lg:justify-start">
-                            <i class="fa-solid fa-check-circle text-accent-green mr-2"></i> No doctor's referral required to start.
+                            <i class="fa-solid fa-check-circle text-accent-green mr-2"></i> You May Be Able to Start Without a Physician Referral.
                         </p>
                     </div>
                     
@@ -209,7 +209,7 @@
                                     <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-2xl bg-calfit-50 text-calfit-500 group-hover:bg-calfit-500 group-hover:text-white transition-colors duration-300 shadow-sm">
                                         <i class="fa-solid fa-user-doctor text-xl"></i>
                                     </div>
-                                    <h4 class="ml-4 text-xl font-bold text-gray-900">Expert-Only Care</h4>
+                                    <h4 class="ml-4 text-xl font-bold text-gray-900">Care Led by Licensed Physical Therapists</h4>
                                 </li>
                                 <li class="flex items-center group">
                                     <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-2xl bg-calfit-50 text-calfit-500 group-hover:bg-calfit-500 group-hover:text-white transition-colors duration-300 shadow-sm">
@@ -221,7 +221,7 @@
                                     <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-2xl bg-calfit-50 text-calfit-500 group-hover:bg-calfit-500 group-hover:text-white transition-colors duration-300 shadow-sm">
                                         <i class="fa-solid fa-file-invoice-dollar text-xl"></i>
                                     </div>
-                                    <h4 class="ml-4 text-xl font-bold text-gray-900">Transparent Billing</h4>
+                                    <h4 class="ml-4 text-xl font-bold text-gray-900">Clear Pricing. No Surprises.</h4>
                                 </li>
                             </ul>
                         </div>
@@ -263,7 +263,7 @@
             <section class="py-16 bg-white border-t border-gray-100">
                 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <div class="inline-block mb-4">
-                        <span class="bg-accent-orange/10 text-accent-orange border border-accent-orange/20 text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-sm"><i class="fa-solid fa-clock mr-1.5"></i> Credentialing In Progress</span>
+                        <span class="bg-accent-orange/10 text-accent-orange border border-accent-orange/20 text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-sm"><i class="fa-solid fa-clock mr-1.5"></i> Coming Soon</span>
                     </div>
                     <h2 class="text-3xl font-black text-calfit-900 tracking-tight sm:text-4xl mb-6">Insurances Accepted</h2>
                     <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
@@ -285,7 +285,6 @@
             </div>
 
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                
                 <!-- Breadcrumbs/Back -->
                 <div class="mb-12 text-left">
                     <a href="#home" class="text-calfit-100 hover:text-white font-medium flex items-center gap-2 transition-colors">
@@ -312,7 +311,7 @@
                 <div class="bg-white/10 p-8 sm:p-10 rounded-3xl backdrop-blur-md border border-white/20 inline-block shadow-2xl">
                     <div class="inline-flex items-center bg-accent-orange/20 border border-accent-orange/30 px-4 py-1.5 rounded-full mb-6">
                         <i class="fa-solid fa-bolt text-accent-orange mr-2"></i>
-                        <p class="text-white font-semibold text-sm">No Referral Needed. Start Today!</p>
+                        <p class="text-white font-semibold text-sm">You May Be Able to Start Without a Physician Referral.</p>
                     </div>
                     <div class="block">
                         <!-- This button links to SPRY EMR Portal -->
@@ -355,8 +354,8 @@
                             <div class="w-16 h-16 bg-gradient-to-br from-calfit-500 to-calfit-700 shadow-md rounded-2xl flex items-center justify-center text-white mb-6 text-2xl">
                                 <i class="fa-solid fa-person-walking"></i>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Pain Management</h3>
-                            <p class="text-gray-600 leading-relaxed text-sm">Expert treatment for back, neck, knee, and foot pain. We identify the biomechanical root cause to relieve pain at the source.</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Pain & Orthopedic Rehabilitation</h3>
+                            <p class="text-gray-600 leading-relaxed text-sm">Help for back and neck pain, shoulder and knee problems, joint stiffness, and common muscle or joint injuries. We’ll work with you to improve movement, build strength, and return to daily activities.</p>
                         </div>
                     </div>
 
@@ -367,8 +366,8 @@
                             <div class="w-16 h-16 bg-gradient-to-br from-calfit-500 to-calfit-700 shadow-md rounded-2xl flex items-center justify-center text-white mb-6 text-2xl">
                                 <i class="fa-solid fa-arrows-spin"></i>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Vestibular Treatment</h3>
-                            <p class="text-gray-600 leading-relaxed text-sm">Specialized care for vertigo, dizziness, and balance issues. Regain your stability and confidence in daily movements.</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Vestibular & Balance Therapy</h3>
+                            <p class="text-gray-600 leading-relaxed text-sm">Individualized rehabilitation for appropriate dizziness, vertigo, and balance concerns, with the goal of improving stability and confidence in everyday movement.</p>
                         </div>
                     </div>
 
@@ -379,8 +378,8 @@
                             <div class="w-16 h-16 bg-gradient-to-br from-calfit-500 to-calfit-700 shadow-md rounded-2xl flex items-center justify-center text-white mb-6 text-2xl">
                                 <i class="fa-solid fa-bed-pulse"></i>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Post-Surgical</h3>
-                            <p class="text-gray-600 leading-relaxed text-sm">Safe, protocol-driven recovery following joint replacements, rotator cuff repairs, and other orthopedic surgeries.</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Post-Surgical Rehabilitation</h3>
+                            <p class="text-gray-600 leading-relaxed text-sm">Structured rehabilitation after eligible orthopedic procedures, tailored to your surgeon’s protocol, your stage of recovery, and your functional goals.</p>
                         </div>
                     </div>
 
@@ -391,8 +390,8 @@
                             <div class="w-16 h-16 bg-gradient-to-br from-calfit-500 to-calfit-700 shadow-md rounded-2xl flex items-center justify-center text-white mb-6 text-2xl">
                                 <i class="fa-solid fa-dumbbell"></i>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Sports Performance</h3>
-                            <p class="text-gray-600 leading-relaxed text-sm">Injury prevention and movement analysis designed for runners, weightlifters, and active weekend warriors.</p>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Sports Rehabilitation & Performance</h3>
+                            <p class="text-gray-600 leading-relaxed text-sm">Build strength, mobility, and movement confidence as you recover from injury and work toward returning to running, training, recreation, or sport.</p>
                         </div>
                     </div>
                 </div>
@@ -500,39 +499,20 @@
                     <div class="text-center mb-12">
                         <h1 class="text-sm text-accent-orange font-bold tracking-widest uppercase mb-2">Testimonials</h1>
                         <h2 class="text-3xl font-black text-calfit-900 tracking-tight sm:text-4xl">What Our Patients Say</h2>
-                        <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">We measure our success by the recovery and satisfaction of our patients.</p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <!-- Review 1 -->
-                        <div class="bg-calfit-50 rounded-2xl p-8 border border-calfit-100 shadow-sm relative">
-                            <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-calfit-500/20"></i>
-                            <div class="flex text-yellow-400 mb-4 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="text-gray-700 italic mb-6 leading-relaxed">"Neha was incredible in helping me recover from my knee surgery. The 1-on-1 attention makes such a huge difference compared to other clinics I've been to. I'm finally back to running!"</p>
-                            <p class="font-bold text-calfit-900">- Sarah T.</p>
+                    <div class="bg-calfit-50 rounded-3xl p-10 text-center border border-calfit-100 shadow-sm max-w-3xl mx-auto relative overflow-hidden">
+                        <div class="absolute -top-10 -right-10 bg-calfit-500 opacity-10 rounded-full w-40 h-40"></div>
+                        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-accent-orange mx-auto mb-6 shadow-sm text-2xl relative z-10">
+                            <i class="fa-solid fa-star"></i>
                         </div>
-
-                        <!-- Review 2 -->
-                        <div class="bg-calfit-50 rounded-2xl p-8 border border-calfit-100 shadow-sm relative">
-                            <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-calfit-500/20"></i>
-                            <div class="flex text-yellow-400 mb-4 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="text-gray-700 italic mb-6 leading-relaxed">"I struggled with chronic back pain for years. Poorva took the time to listen, found the root cause, and gave me exercises that actually worked. Highly recommend CalFit!"</p>
-                            <p class="font-bold text-calfit-900">- Michael R.</p>
-                        </div>
-
-                        <!-- Review 3 -->
-                        <div class="bg-calfit-50 rounded-2xl p-8 border border-calfit-100 shadow-sm relative">
-                            <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-calfit-500/20"></i>
-                            <div class="flex text-yellow-400 mb-4 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="text-gray-700 italic mb-6 leading-relaxed">"The clinic is beautiful and clean, and the therapists are true experts. My vertigo symptoms improved dramatically after just a few specialized sessions here."</p>
-                            <p class="font-bold text-calfit-900">- Emily W.</p>
-                        </div>
+                        <h3 class="text-2xl font-black text-gray-900 mb-4 relative z-10">Share Your Experience</h3>
+                        <p class="text-gray-600 mb-8 text-lg relative z-10">We love hearing from our patients! If we've helped you move better and get back to what you love, please consider leaving us a review.</p>
+                        
+                        <!-- Review Button Placeholder -->
+                        <button onclick="alert('Once your Google Business Profile is live, we will link this button directly to your Google Review page!')" class="inline-flex items-center justify-center bg-calfit-900 hover:bg-calfit-700 text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-md transform hover:-translate-y-1 gap-2 relative z-10">
+                            <i class="fa-solid fa-pen"></i> Write a Review
+                        </button>
                     </div>
                 </div>
 
@@ -553,18 +533,18 @@
 
                 <div class="text-center mb-16">
                     <h1 class="text-sm text-accent-orange font-bold tracking-widest uppercase mb-2">Locally Owned</h1>
-                    <h2 class="text-4xl font-black text-calfit-900 tracking-tight sm:text-5xl">Meet Your Therapists</h2>
+                    <h2 class="text-4xl font-black text-calfit-900 tracking-tight sm:text-5xl">Meet The Team</h2>
                     <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600">
                         CalFit is proudly owned and operated locally, dedicated to elevating the standard of care in South San Jose.
                     </p>
                 </div>
 
                 <!-- Two Column Grid for Bios -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
                     
                     <!-- Neha Card -->
-                    <div class="bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 flex flex-col group">
-                        <div class="h-80 bg-gray-200 relative overflow-hidden">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 flex flex-col group h-full">
+                        <div class="h-80 bg-gray-200 relative overflow-hidden flex-shrink-0">
                             <img src="https://placehold.co/800x600/e1eff7/469c9e?text=Neha+Joshi\nPT" alt="Neha Joshi, PT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
                         <div class="p-8 flex flex-col flex-grow">
@@ -578,8 +558,8 @@
                     </div>
 
                     <!-- Poorva Card -->
-                    <div class="bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 flex flex-col group">
-                        <div class="h-80 bg-gray-200 relative overflow-hidden">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 flex flex-col group h-full">
+                        <div class="h-80 bg-gray-200 relative overflow-hidden flex-shrink-0">
                             <img src="https://placehold.co/800x600/e1eff7/469c9e?text=Poorva\nPT" alt="Poorva, PT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
                         <div class="p-8 flex flex-col flex-grow">
@@ -605,7 +585,7 @@
                 <div>
                     <div class="flex items-center gap-4 mb-6 bg-white p-4 rounded-2xl inline-flex shadow-sm">
                         <!-- Much Larger Logo inside footer -->
-                        <img src="logo.jpg" alt="CalFit Physical Therapy Logo" class="h-24 md:h-32 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/200x80/ffffff/143154?text=CalFit';">
+                        <img src="logo.jpg" alt="CalFit Physical Therapy Logo" class="h-32 md:h-40 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/200x80/ffffff/143154?text=CalFit';">
                         <div class="flex flex-col justify-center pr-2 border-l-2 border-gray-100 pl-4">
                             <span class="text-2xl md:text-3xl font-black text-calfit-900 leading-none tracking-tight mb-1">CalFit</span>
                             <span class="text-xs font-bold text-calfit-500 tracking-widest uppercase leading-none">Physical Therapy</span>
@@ -727,7 +707,7 @@
             }
         });
 
-        // Mock Booking Function (Remains for demo purposes if needed later)
+        // Mock Booking Function
         function bookAppointment() {
             const modalHtml = `
                 <div id="booking-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-calfit-900/80 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300" style="animation: fadeIn 0.3s forwards;">
